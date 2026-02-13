@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>中国高校竞赛地图</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="map-shell">
+      <header class="hero">
+        <p class="hero-kicker">Canvas + GeoJSON（由 shapefile 包从 source 转换）</p>
+        <h1>中国高校竞赛获奖地图</h1>
+        <p>鼠标移入省份会凸起，点击后进入该省份的获奖信息表格页面。</p>
+      </header>
+
+      <section class="canvas-panel">
+        <canvas id="chinaMap" aria-label="中国地图"></canvas>
+        <div class="map-meta">
+          <span id="hoverProvince">当前省份：无</span>
+          <span id="clickTip">点击任意省份查看高校竞赛获奖信息</span>
+        </div>
+      </section>
+    </main>
+
+    <script src="map.js"></script>
+  </body>
+</html>

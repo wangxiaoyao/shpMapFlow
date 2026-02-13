@@ -1,3 +1,6 @@
+# ignore
+*-ignore.*
+
 # Logs
 logs
 *.log

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>省份获奖信息</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="info-shell">
+      <header class="info-header">
+        <a class="back-link" href="index.html">返回地图</a>
+        <h1 id="pageTitle">省份高校竞赛获奖信息</h1>
+        <p>数据来源：本项目 `data.json`（静态示例数据）</p>
+      </header>
+
+      <section class="table-panel">
+        <table>
+          <thead>
+            <tr>
+              <th>序号</th>
+              <th>学校</th>
+              <th>竞赛名称</th>
+              <th>奖项</th>
+              <th>年份</th>
+              <th>备注</th>
+            </tr>
+          </thead>
+          <tbody id="infoBody"></tbody>
+        </table>
+        <p id="emptyState" class="empty-state" hidden>该省份暂无数据。</p>
+      </section>
+    </main>
+
+    <script src="info.js"></script>
+  </body>
+</html>

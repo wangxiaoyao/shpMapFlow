@@ -67,12 +67,46 @@ p {
   overflow: hidden;
 }
 
+.canvas-panel {
+  position: relative;
+}
+
 #chinaMap {
   width: 100%;
   height: min(72vh, 700px);
   min-height: 420px;
   display: block;
   background: linear-gradient(180deg, #fafdff 0%, #e8f2ff 100%);
+}
+
+.map-disclaimer {
+  position: absolute;
+  left: 18px;
+  bottom: 66px;
+  width: min(420px, calc(100% - 36px));
+  padding: 14px 16px;
+  border: 1px solid rgba(182, 201, 230, 0.95);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 24px rgba(28, 55, 101, 0.12);
+}
+
+.map-disclaimer h2 {
+  margin: 0 0 8px;
+  font-size: 15px;
+  color: #24477d;
+}
+
+.map-disclaimer p {
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #50627f;
+}
+
+.map-disclaimer p:first-of-type {
+  margin-top: 0;
 }
 
 .map-meta {
@@ -140,6 +174,14 @@ tbody tr:nth-child(2n) {
   #chinaMap {
     min-height: 360px;
     height: min(62vh, 560px);
+  }
+
+  .map-disclaimer {
+    left: 12px;
+    right: 12px;
+    bottom: 86px;
+    width: auto;
+    padding: 12px 14px;
   }
 
   .map-meta {

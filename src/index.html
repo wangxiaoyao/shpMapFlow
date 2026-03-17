@@ -9,13 +9,26 @@
   <body>
     <main class="map-shell">
       <header class="hero">
-        <p class="hero-kicker">Canvas + GeoJSON（由 shapefile 包从 source 转换）</p>
+        <p class="hero-kicker">
+          Canvas + GeoJSON（由 shapefile 包从 source 转换）
+        </p>
         <h1>中国高校竞赛获奖地图</h1>
         <p>鼠标移入省份会凸起，点击后进入该省份的获奖信息表格页面。</p>
       </header>
 
       <section class="canvas-panel">
         <canvas id="chinaMap" aria-label="中国地图"></canvas>
+        <aside class="map-disclaimer" aria-label="地图说明">
+          <h2>地图说明</h2>
+          <p>
+            数据来源：本图行政区划边界基于高德地图 Web 服务 API（LBS
+            Amap）数据生成。
+          </p>
+          <p>坐标系说明：采用 GCJ-02 坐标系（中国测绘局标准偏移坐标）。</p>
+          <p>
+            法律声明：本成果仅用于数据可视化展示，地图底图及边界表达符合国家相关地图管理规定。
+          </p>
+        </aside>
         <div class="map-meta">
           <span id="hoverProvince">当前省份：无</span>
           <span id="clickTip">点击任意省份查看高校竞赛获奖信息</span>
